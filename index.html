@@ -1,164 +1,23 @@
-
 <!DOCTYPE html>
-<html>
-    <head>
-        <!-- 
-            Author: Aditya Padala
-            Course: CSCE 242
-        -->
-        <title>CSCE 242: Main Page</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elite Cricket Academy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Elite Cricket Academy</h1>
+      <p>Official Links</p>
 
-    <body>
-        <header>
-            <div id="heading">
-                <h1>CSCE 242: Web Applications</h1>
-            </div>
-        </header>
-        <main>
-            <div id="main-content">
-                <h2 class="name">Aditya Padala</h2>
-                <p><b>Class description:</b> Learn how to develop web pages.</p>
-                <p><b>Special note:</b> With a kind and energetic professor. <img src = "https://clipart-library.com/new_gallery/237-2374262_emoji-emoticon-ok-gesture-smiley-png-image-with.png" height = "15" width "15"></img></p>
-            
-                <h2 class="linkhead">Assignments</h2>
-                <nav id="links">
-                    <ul class="columns">
-                        <li><a href = "https://adipad21.github.io/csce242/assignments/01/index.html"><h2>Assignment 1: Basic HTML</h2>
-                            <img src="images/01.png" width="300" height="150"> 
-                            <p>Assignment 1 involves creating a main webpage as a portal for class assignments with a specific directory structure, and an Assignment 1 page on a chosen topic that includes various HTML elements like headings, paragraphs, images, a list, a table, and external links, along with the required structural HTML code.</p>
-                            </a>
-                        </li>
-                        <li><a href = "https://adipad21.github.io/csce242/assignments/02/index.html"><h2>Assignment 2: Basic CSS</h2>
-                            <img src="images/02.png" width="300" height="150"> 
-                            <p>Assignment 2 involves enhancing the main portal webpage with styled content and creating a new, themed webpage with various HTML elements like navigation links, paragraphs, images, and a table, all cohesively styled using different CSS techniques (element, ID, class name) to ensure a visually appealing and consistent design.</p>
-                            </a>
-                        </li>
-                        <li><a href = "https://adipad21.github.io/csce242/assignments/03/index.html"><h2>Assignment 3: Page Layout</h2>
-                            <img src="images/03.png" width="300" height="150"> 
-                            <p>Assignment 3 involves creating a single webpage using HTML5 elements (header, footer, nav, section, aside, article) structured traditionally with a header/content/footer layout, and styled with CSS Flexbox. The design includes a responsive navigation bar, column layout adjustments via media queries for different screen sizes, and visual enhancements like background colors and padding, following a provided diagram.</p>
-                            </a>
-                        </li>
-                        <li><a href = "https://adipad21.github.io/csce242/assignments/04/index.html"><h2>Assignment 4: Recreate CSS Page</h2>
-                            <img src="images/04.png" width="300" height="150"> 
-                            <p>Assignment 4 involves recreating a specific University of South Carolina webpage. The task requires employing HTML5 elements (header, footer, nav, section, aside, article) in a traditional header/content/footer structure, coupled with CSS Flexbox for styling. The webpage must feature a responsive navigation bar that remains visible on small screens, use placeholder images, and have all text replaced with Lorem Ipsum. Additionally, all hyperlinks should redirect to '#', and the color scheme must match the original page using a color picker tool. The assignment is designed to enhance the ability to accurately replicate HTML/CSS layouts, with particular emphasis on flexbox utilization for responsive design.</p>
-                            </a>
-                        </li>
-                        <li><a href = "https://adipad21.github.io/csce242/assignments/05/index.html"><h2>Assignment 5: JavaScript, Buttons, Functions, and more</h2>
-                            <img src="images/05.png" width="300" height="150"> 
-                            <p>Assignment 5 involves designing an interactive web page that incorporates three main features: a click-triggered image change with size and aspect ratio consistency, a slider-driven full-circle image rotation for a dynamic visual effect, and an interactive column where users can add star images with each click, ensuring a neat and visually appealing arrangement. The goal is to blend seamless functionality with an intuitive and engaging user interface.</p>
-                            </a>
-                        </li>
-                        <li><a href = "https://adipad21.github.io/csce242/assignments/06/index.html"><h2>Assignment 6: Conditionals</h2>
-                            <img src="images/06.png" width="300" height="150"> 
-                            <p>Assignment 6 involves creating a webpage with flexbox layout and styling, including a toggle menu for small screens and a styled menu bar for larger screens. It includes two exercises: one where users can switch pictures by entering specific commands via keyboard input, and another where they can switch pictures using a slider. Each exercise incorporates provided images from Freepik, ensuring compliance with usage rules.</p>
-                            </a>
-                        </li>
-                        <li><a href = "https://adipad21.github.io/csce242/assignments/07/index.html"><h2>Assignment 7: For Loops</h2>
-                            <img src="images/07.png" width="300" height="150"> 
-                            <p>Assignment 7 involves creating a dynamic animation where a ball bounces within a container, controlled by a button that toggles between starting and stopping the animation, employing JavaScript's setInterval function for movement. The second assignment focuses on interactivity with a series of yoga move images; clicking on an image reveals its description, implemented by adding onclick events through a for loop to enhance user engagement with the content.</p>
-                            </a>
-                        </li>
-                        <li><a href = "https://adipad21.github.io/csce242/assignments/08/index.html"><h2>Assignment 8: Arrays</h2>
-                            <img src="images/08.png" width="300" height="150"> 
-                            <p>Assignment 8 involves creating a dynamic web page with two main features. First, implement a rotating advertisement banner that cycles through an array of at least five texts every 2 seconds, looping back to the first after displaying the last. Ensure the initial text is visible on page load. Second, display a series of images with attributions by looping through an associative array, presenting each image with its corresponding attribution and a hyperlink to the source. </p>
-                            </a>
-                        </li>  
-                        <li><a href = "https://adipad21.github.io/csce242/assignments/09/index.html"><h2>Assignment 9: Classes</h2>
-                            <img src="images/09.png" width="300" height="150"> 
-                            <p>Assignment 9 involves creating a visually appealing project that displays a list of items, such as trees, with comprehensive details using a two-column layout. Upon selecting an item, a modal dialog should appear, providing expanded information. Visual consistency in layout and image sizes is essential for an engaging user experience. The implementation requires proficiency in HTML, CSS (including W3Schools modal dialog stylesheets), and JavaScript for dynamic content display. </p>
-                            </a>
-                        </li>
-                        <li><a href = "https://adipad21.github.io/csce242/assignments/10/index.html"><h2>Assignment 10: Parsing JSON</h2>
-                            <img src="images/10.png" width="300" height="150"> 
-                            <p>Assignment 10 involves developing a web application to fetch and render house plans from a JSON endpoint. We will use JavaScript’s async/await to handle data, dynamically generating sections for each house with details and images. The content must be styled with CSS to match a given two-column layout design, ensuring a consistent and attractive presentation that resembles the provided template. The color scheme choice should complement the structured layout.</p>
-                            </a>
-                        </li>
-                        <li><a><h2>Assignment 11: Server Side Hello World</h2>
-                            <img src="images/11.png" width="300" height="150"></a> 
-                            <h5 class="middle"><a href="https://github.com/Adipad21/server-hello-world">Code Repo</a></h5>
-                            <h5 class="middle"><a href="https://server-hello-world-1.onrender.com">Live Demo</a></h5>
-                        </li>
-                        <li><a><h2>Assignment 12: Reading Server Side JSON</h2>
-                            <img src="images/12.png" width="300" height="150"></a> 
-                            <h5 class="middle"><a href="https://github.com/Adipad21/server-hello-world/tree/main">Code Repo</a></h5>
-                            <h5 class="middle"><a href="https://server-hello-world-2.onrender.com/">Live Demo</a></h5>
-                        </li> 
-                        <li><a><h2>Assignment 13: Server get and post</h2>
-                            <img src="images/13.png" width="300" height="150"></a> 
-                            <h5 class="middle"><a href="https://github.com/Adipad21/assignment-13/tree/main">Code Repo</a></h5>
-                            <h5 class="middle"><a href="https://assignment-13-s9c7.onrender.com/">Live Demo</a></h5>
-                        </li>
-                        <li><a><h2>Assignment 14: Server edit and delete</h2>
-                            <img src="images/14.png" width="300" height="150"></a> 
-                            <h5 class="middle"><a href="https://github.com/Adipad21/assignment14">Code Repo</a></h5>
-                            <h5 class="middle"><a href="https://assignment14-tiem.onrender.com/">Live Demo</a></h5>
-                        </li>
-                        <li><a><h2>Assignment 15: Server CRUD with MongoDb</h2>
-                            <img src="images/15.png" width="300" height="150"></a> 
-                            <h5 class="middle"><a href="https://github.com/Adipad21/assignment_15">Code Repo</a></h5>
-                            <h5 class="middle"><a href="https://assignment-15-tf7n.onrender.com/">Live Demo</a></h5>
-                        </li>
-                    </ul>
-                </nav>
-                <h2 class="linkhead">Projects</h2>
-                <nav id="links">
-                    <ul class="columns">
-                        <li><a href = "https://adipad21.github.io/csce242/projects/part1/projectdescription.pdf">
-                            <h2>Semester Project Part 1: Topic Selection</h2>
-                            <img src="images/P1.png" width="150" height="150"> 
-                            <p>Project part 1 is a PDF document that serves as a blueprint for a custom website, encapsulating the creator's skills and creativity. It outlines the website's name, provides an insightful description of the chosen topic, and lists the main pages, reflecting the site's navigational structure. Furthermore, it details the data management approach, including data types, security measures, and administrative functionalities. This project not only highlights the developer's technical prowess but also offers the flexibility to craft a personalized online webiste.</p>
-                            </a>
-                        </li>
-                        <li><a href = "https://adipad21.github.io/csce242/projects/part2/index.html">
-                            <h2>Semester Project Part 2: Wireframes</h2>
-                            <img src="images/P2.png" width="150" height="150"> 
-                            <p>Project part 2 involves creating detailed, professional wireframes for every page of the website, ensuring consistency, alignment, and uniformity in design elements. It includes crafting specific detail pages for certain items and using a monochrome color palette, with placeholder content where necessary.</p>
-                            </a>
-                        </li>
-                        <li><a href = "https://adipad21.github.io/csce242/projects/part3/index.html">
-                            <h2>Semester Project Part 3: HTML and CSS</h2>
-                            <img src="images/P3.png" width="150" height="150"> 
-                            <p>Project part 3 involves translating wireframes into a fully functional, responsive website using HTML and CSS, ensuring compatibility across various screen sizes. The design will be monochromatic, utilizing CSS variables for color definitions, and will include a working hamburger menu through JavaScript. Modifications based on previous feedback on the wireframes must be integrated into this implementation.</p>
-                            </a>
-                        </li>  
-                        <li><a href = "https://adipad21.github.io/csce242/projects/part4/index.html">
-                            <h2>Semester Project Part 4: Colors - Pictures - and Text</h2>
-                            <img src="images/P4.png" width="150" height="150"> 
-                            <p>Project part 4 involves enhancing a website by incorporating professional images without violating copyright laws, updating all placeholder content with meaningful text, establishing a cohesive and appealing color scheme that complements the brand logo, ensuring the website's layout adapts flawlessly across different screen resolutions with appropriate media queries, and implementing a responsive navigation solution, like a hamburger menu, for optimal user experience on smaller devices.</p>
-                            </a>
-                        </li>  
-                        <li><a href = "https://adipad21.github.io/csce242/projects/part4.5/index.html">
-                            <h2>Semester Project Part 4.5: Improve Your Website</h2>
-                            <img src="images/P4.png" width="150" height="150"> 
-                            <p>Project 4.5 involves finalizing a website by incorporating feedback from instructors and TAs, enhancing its aesthetics, functionality, and responsiveness. This phase is dedicated to refining the site's design, ensuring content accuracy and relevance, and optimizing cross-device compatibility, culminating in a polished and professional web presence.</p>
-                            </a>
-                        </li>
-                        <li><a href = "https://adipad21.github.io/csce242/projects/part5/index.html">
-                            <h2>Semester Project Part 5: JSON File Parsing</h2>
-                            <img src="images/P5.png" width="150" height="150"> 
-                            <p>Project 5 involves transitioning from hard-coded HTML content to dynamically generated content using JavaScript. Upon the webpage's load, JavaScript will read a JSON file, parse its contents, and display the information within a designated div. This method requires creating a JSON file with a structured list of items, each including specific details such as an ID, an image link, an array of information, and other relevant fields, to enhance the site's interactivity and maintainability.</p>
-                            </a>
-                        </li>
-                        <li><a href = "https://adipad21.github.io/csce242/projects/part6/index.html">
-                            <h2>Semester Project Part 6: Client Side Form Validation and JavaScript</h2>
-                            <img src="images/P6.png" width="150" height="150"> 
-                            <p>Project 6 involves creating a comprehensive web page that includes a "Contact Me" form and a "Data Entry" form, both featuring HTML5 validation and asynchronous submission without page reloads. Success and error messages should be displayed appropriately. Additionally, the page should incorporate an IFrame element (or an alternative feature for sites where an IFrame is unsuitable) that is responsive and complements the site's layout across various resolutions. This task tests proficiency in form handling, asynchronous JavaScript, and responsive design.</p>
-                            </a>
-                        </li>
-                        <li><a><h2>Final Project</h2>
-                            <img src="images/P7.png" width="300" height="150"></a> 
-                            <h5 class="middle"><a href="https://github.com/Adipad21/final">Code Repo</a></h5>
-                            <h5 class="middle"><a href="https://final-yvax.onrender.com">Live Demo</a></h5>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </main>
-        <footer id="main-footer">
-            <p>&copy;adityapadala</p>
-        </footer>
-
-    </body>
+      <a class="button" href="https://elitecricket.com" target="_blank">🌐 Website</a>
+      <a class="button" href="https://www.instagram.com/elitecricketusa/" target="_blank">📸 Instagram</a>
+      <a class="button" href="https://chat.whatsapp.com/FQeKQnzBCtL2oY4J7fVCqx" target="_blank">💬 WhatsApp Group</a>
+      <a class="button" href="https://www.facebook.com/profile.php?id=61573433095965" target="_blank">📘 Facebook</a>
+      <a class="button" href="https://cognitoforms.com/USAEliteCricket/_2025ECARegistrationForm" target="_blank">📝 Registration</a>
+    </div>
+  </div>
+</body>
 </html>
