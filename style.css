@@ -162,8 +162,19 @@ a:any-link {
   padding: 0.75rem 6.53rem;
 }
 
+/* PROFILE-CARD-LINK-HOVER */
+.profile-card__link {
+  transition: all 0.3s ease-in-out;
+}
+
+.profile-card__link:hover,
+.profile-card__link:focus-visible {
+  background-color: var(--GREEN);
+  color: var(--GREY-700);
+}
+
 /* Tablet */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   /* || PROFILE-CARD */
   .profile-card {
     max-width: 456px;
@@ -221,16 +232,5 @@ a:any-link {
 
   .profile-card__link--Instagram {
     padding: 0.75rem 7.31rem;
-  }
-
-  /* PROFILE-CARD-LINK-HOVER */
-  .profile-card__link {
-    transition: all 0.3s ease-in-out;
-  }
-
-  .profile-card__link:hover,
-  .profile-card__link:focus-visible {
-    background-color: var(--GREEN);
-    color: var(--GREY-700);
   }
 }
